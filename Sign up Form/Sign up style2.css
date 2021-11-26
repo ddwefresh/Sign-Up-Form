@@ -1,0 +1,117 @@
+html{
+	background-image: url("ps3.gif");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Gudea', sans-serif;
+}
+h1, h2, h3{
+	color:white;
+}
+#matthew{
+	position: fixed; 
+	right: 10px; 
+	bottom: -85px; 
+	width:130px; 
+	height: 100px;
+}
+label{
+	color:white;
+}
+p{
+	color:white;
+}
+#box{
+	border-radius: 5px;
+	background-color: #383838;
+	padding: 20px;
+	width: 400px;
+	color:black;
+}
+#scroll{
+	overflow: auto;
+	border-radius: 5px;
+	background-color: #383838;
+	padding: 20px;
+	height: 100px;
+	width: 400px;
+}
+#box_behind{
+	top: -795px; 
+	right: 0px;
+	z-index: -1;
+	position:relative;
+	border-radius: 5px;
+	background-color: #5c98ff;
+	width: 440px;
+	height: 100px;
+}
+#box_behind2{
+	top: -300px; 
+	right: 0px;
+	z-index: -2;
+	position:relative;
+	border-radius: 5px;
+	background-color: #5c98ff;
+	width: 440px;
+	height: 70px;
+}
+.input_box{
+	color:white;
+	transition-duration: 0.2s;
+	border: 2px solid #616161;
+	border-radius: 5px;
+	background-color: #383838;
+	width: 382px;
+	padding: 7px;
+	outline: none;
+}
+.input_box:focus {
+  border: 2px solid white;
+}
+.button{
+	transition-duration: 0.2s;
+	background-color: #5c98ff;
+	color: white;
+	height: 35px;
+	width: 75px;
+	border: 2px solid #5c98ff;
+	border-radius: 20px;
+}
+.button:hover {
+  background-color: #383838;
+  border: 2px solid #5c98ff;
+  color: #5c98ff;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.password_button{
+	transition-duration: 0.2s;
+	color: white;
+	height: 25px;
+	width: 130px;
+}
+.password_button:hover {
+  color: #5c98ff;
+  cursor: pointer;
+}
+.theme_button{
+	position: fixed; 
+	right: -10px; 
+	bottom: -50px; 
+	width:100%; height: 100px;
+}
+::-webkit-scrollbar {
+	border-radius: 20px;
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	border-radius: 20px;
+	background: #474747;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background: #616161;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: grey;
+}
