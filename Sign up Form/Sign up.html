@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up Form</title>
+	<div id="theme">
+		<link rel=stylesheet href="Sign up style.css">
+	</div>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="theme_button"><button class="button" onClick="theme()">Theme</button></div>
+	<p id="matthew" align="right">By Matthew Quock</p>
+	<div align="center">
+		<br>
+		<h1>FL STUDIO Membership</h1>
+		<br>
+		<h3>Sign Up Form</h3>
+		<div id="box" >
+			<form align="left">
+				<label for="fn">First Name</label><br>
+				<input class="input_box" type="text" for="fn" name="fn" pattern="^[A-Z][a-z]*$" placeholder="First Name..." oninvalid="setCustomValidity('Must start with capital and only contain letters')" oninput="this.setCustomValidity('')" required>
+				<br><br>
+				
+				<label for="ln">Last Name</label><br>
+				<input class="input_box" type="text" for="ln" name="ln" pattern="^[A-Z][a-z]*$" placeholder="Last Name..." oninvalid="setCustomValidity('Must start with capital and only contain letters')" oninput="this.setCustomValidity('')" required>
+				<br><br>
+				
+				<label for="birthday">Birthday</label><br>
+				<input class="input_box" type="date" for="birthday" name="birthday" required>
+				<br><br>
+				
+				<label for="email">Email</label><br>
+				<input class="input_box" type="email" for="email" name="email" pattern="^\w*@gmail\.com$|^\w*@hotmail\.com$|^\w*@yahoo\.com$|^\w*@outlook\.com$" placeholder="Ex. Someone@gmail.com" oninvalid="setCustomValidity('Email domain unreconized')" oninput="this.setCustomValidity('')" required>
+				<br><br>
+
+				<label for="phone_number">Phone Number (Optional)</label><br>
+				<input class="input_box" type="tel" for="phone_number" name="phone_number" placeholder="Ex. 604-123-1234, (604)123-1234, 6041231234" pattern="\d{3}-\d{3}-\d{4}|\d{3}\d{3}\d{4}|\(\d{3}\)\d{3}-\d{4}">
+				<br><br>
+			
+				<label for="password">Password</label><br>
+				<div id="password_see">
+					<input class="input_box" type="password" for="password" id="password" name="password" minlength="8" placeholder="Ex. Password123" pattern="^\D\w*\d$" oninvalid="setCustomValidity('Must start with a letter and end with a number (Minimum 8 characters)')" oninput="this.setCustomValidity('')" required>
+				</div>
+				
+				<p id="password_button" onClick="password()" class="password_button">See Password 🙈</p>
+				
+				
+				<input class="gender" type="radio" id="g1" name="gender"  required>
+				<label for="g1">Male</label>
+				<input class="gender" type="radio" id="g2" name="gender">
+				<label for="g2">Female</label>
+				<input class="gender" type="radio" id="g3" name="gender">
+				<label for="g3">Non-Binary</label>
+				<input class="gender" type="radio" id="g4" name="gender">
+				<label for="g4">Prefer not to say</label><br>
+
+			<form>
+		</div>
+		<br>
+		
+		<h3>Terms and Conditions</h3>
+		<div id="scroll" align="left">
+			<label>FL Studio is the result of over  20 years of continuous development, to become the fastest way from your brain to your speakers. Many of the world's top DJs and producers started by downloading the FL Studio trial, making their first beats in a bedroom studio. Hey you're reading this, cool. Now it's your turn, our trial allows you to make and save projects, then export them to audio formats like MP3 and WAV, ready to share with the world. How far will FL Studio take you? Mix and master music to the highest professional standards. This isn't offically associated with Image Line. All the features you need to create today's most complex productions including: effects chains, audio sends, sidechain control, advanced automation, plugin delay compensation and more...</label>
+			<br><br>
+			<button class="button">Agree</button>
+			<br>
+		</div>	
+		
+		<div id="box_behind" align="center"></div>
+		<div id="box_behind2" align="center"></div>
+	</div>
+	<script src="Sign up js.js"></script>
+</body>
+</html>
